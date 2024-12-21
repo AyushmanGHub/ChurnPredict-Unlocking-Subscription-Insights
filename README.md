@@ -31,10 +31,10 @@
 <img src="plots/06.png" alt="Alt Text" width="800" height ="300"/>
 
 ### Figure 07. ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
-<img src="plots/07.png" alt="Alt Text" width="800" height ="300"/>
+<img src="plots/07.png" alt="Alt Text" width="800" height ="350"/>
 
 ### Figure 08. Accuracy,	Precision,	Recall and 	ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
-<img src="plots/08.png" alt="Alt Text" width="800" height ="300"/>
+<img src="plots/08.png" alt="Alt Text" width="800" height ="250"/>
 
 ## Result from Model
 
