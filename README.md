@@ -10,7 +10,7 @@
 ## Exploratory Data Analysis
 
 ### Figure 01. Histogram of Categorical data
-<img src="plots/01.png" alt="Alt Text" width="800" height ="300"/>
+<img src="plots/01.png" alt="Alt Text" width="900" height ="350"/>
 
 ### Figure 02. Histogram of Numerical data
 <img src="plots/02.png" alt="Alt Text" width="800" height ="300"/>
