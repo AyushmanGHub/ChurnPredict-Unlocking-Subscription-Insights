@@ -18,23 +18,23 @@
 ## Training Models
 
 ### Figure 03. Logistic Regression Feature significance
-<img src="plots/03.png" alt="Alt Text" width="600" height ="350"/>
+<img src="plots/03.png" alt="Alt Text" width="700" height ="300"/>
 ### Figure 04. Random Forest Feature significance
-<img src="plots/04.png" alt="Alt Text" width="600" height ="350"/>
+<img src="plots/04.png" alt="Alt Text" width="700" height ="300"/>
 ### Figure 05. XGBoost Feature significance
-<img src="plots/05.png" alt="Alt Text" width="600" height ="350"/>
+<img src="plots/05.png" alt="Alt Text" width="700" height ="300"/>
 
 
 ## Model Evaluation
 
 ### Figure 06. Confusion Matrix of (a) Logistic Regression, (b) Random Forest and (c) XGBoost Classifiers
-<img src="plots/06.png" alt="Alt Text" width="600" height ="350"/>
+<img src="plots/06.png" alt="Alt Text" width="800" height ="300"/>
 
-### Figure 07. Confusion Matrix of Logistic Regression, Random Forest and XGBoost Classifiers
-<img src="plots/07.png" alt="Alt Text" width="600" height ="350"/>
+### Figure 07. ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
+<img src="plots/07.png" alt="Alt Text" width="800" height ="300"/>
 
-### Figure 07. Accuracy,	Precision,	Recall and 	ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
-<img src="plots/07.png" alt="Alt Text" width="600" height ="350"/>
+### Figure 08. Accuracy,	Precision,	Recall and 	ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
+<img src="plots/08.png" alt="Alt Text" width="800" height ="300"/>
 
 ## Result from Model
 
