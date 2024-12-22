@@ -19,16 +19,21 @@ By integrating advanced machine learning techniques and visualization, this proj
 
 
 ## About the Dataset
-**Dataset Overview:**  
-The dataset for this project is sourced from the Kaggle competition [Streaming Subscription Churn Model](https://www.kaggle.com/competitions/streaming-subscription-churn-model/data). It contains detailed user information to predict subscription churn. It has 125,000 records and 20 fields. Key features include user demographics, subscription details, usage patterns, and customer service interactions.  
 
-- **Key Columns:**  
+The dataset for this project is sourced from the Kaggle competition [Streaming Subscription Churn Model](https://www.kaggle.com/competitions/streaming-subscription-churn-model/data). It provides detailed user information to predict subscription churn, including demographics, subscription details, usage patterns, and customer support interactions.
+
+- **Key Features:**  
   - `customer_id`: Unique identifier for each user.  
   - `age`, `location`: User demographic information.  
   - `subscription_type`, `payment_plan`: Details about the subscription.  
   - `customer_service_inquiries`: Interaction history with customer support.  
   - `churned`: Target variable indicating whether the user churned.  
 
+**Data Preprocessing:**  
+- Categorical fields, such as `location` and `subscription_type`, were encoded using techniques like one-hot encoding or label encoding.  
+- Numerical fields were normalized to ensure features have a consistent scale, which is crucial for certain machine learning algorithms.  
+
+This structured and preprocessed dataset serves as a robust foundation for developing accurate predictive models for churn.
 
 
 ## Exploratory Data Analysis
@@ -51,16 +56,42 @@ The dataset for this project is sourced from the Kaggle competition [Streaming S
 
 ## Model Evaluation
 
+
 ### Figure 06. Confusion Matrix of (a) Logistic Regression, (b) Random Forest and (c) XGBoost Classifiers
+
 <img src="plots/06.png" alt="Alt Text" width="800" height ="300"/>
 
 ### Figure 07. ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
+
 <img src="plots/07.png" alt="Alt Text" width="800" height ="350"/>
 
 ### Figure 08. Accuracy,	Precision,	Recall and 	ROC-AUC of Logistic Regression, Random Forest and XGBoost Classifiers
+
 <img src="plots/08.png" alt="Alt Text" width="800" height ="250"/>
 
-## Result from Model
+### Model Performance Comparison
+
+|        Model        | Accuracy | Precision | Recall   | ROC AUC  |
+|-------------------- |----------|-----------|----------|----------|
+|       XGBoost       | 0.870000 | 0.828283  | 0.901099 | 0.872568 |
+|    Random Forest    | 0.860000 | 0.818182  | 0.890110 | 0.862486 |
+| Logistic Regression | 0.805000 | 0.754902  | 0.846154 | 0.808398 |
+
+
+## Sample Result from Model
+
+| Customer ID |  Actual Churn   | XGBoost Prediction | Random Forest Prediction | Logistic Regression Prediction |
+|-------------|-----------------|--------------------|--------------------------|--------------------------------|
+| **118359**  | Will Not Churn  |   Will Not Churn   |      Will Not Churn      |         Will Not Churn         |
+| **112199**  | Will Not Churn  |     Will Churn     |      Will Not Churn      |           Will Churn           |
+| **32131**   |   Will Churn    |     Will Churn     |        Will Churn        |         Will Not Churn         |
+| **110442**  | Will Not Churn  |     Will Churn     |      Will Not Churn      |         Will Not Churn         |
+| **71731**   | Will Not Churn  |   Will Not Churn   |     Will Not Churn       |         Will Not Churn         |
+| **102796**  |   Will Churn    |     Will Churn     |        Will Churn        |         Will Not Churn         |
+| **60860**   |   Will Churn    |   Will Not Churn   |        Will Churn        |           Will Churn           |
+| **4472**    |   Will Churn    |     Will Churn     |        Will Churn        |           Will Churn           |
+| **116300**  |   Will Churn    |     Will Churn     |        Will Churn        |         Will Not Churn         |
+| **44575**   |   Will Churn    |   Will Not Churn   |        Will Churn        |         Will Not Churn         |
 
 ## Results and Conclusion
 
