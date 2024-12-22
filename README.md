@@ -48,9 +48,11 @@ This structured and preprocessed dataset serves as a robust foundation for devel
 
 ### Figure 03. Logistic Regression Feature significance
 <img src="plots/03.png" alt="Alt Text" width="700" height ="300"/>
+
 ### Figure 04. Random Forest Feature significance
 <img src="plots/04.png" alt="Alt Text" width="700" height ="300"/>
-###  Figure 05. XGBoost Feature significance
+
+### Figure 05. XGBoost Feature significance
 <img src="plots/05.png" alt="Alt Text" width="700" height ="300"/>
 
 
